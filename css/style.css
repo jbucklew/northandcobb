@@ -1,0 +1,228 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+header{
+  width: 100%
+}
+header img {
+  height: 48px;
+  margin-top: 10px;
+  width: 510px;
+}
+section {
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+}
+hr {
+  border-color: #e28564;
+  margin: 10px 0;
+}
+.head {
+  float: left;
+  font-size: 1.5em;
+  width: 25%
+}
+.row {
+  height: 100%;
+  margin: 10px 0 0;
+  width: 100%;
+}
+.data {
+  color: #aaa;
+  font-size: 1.5em;
+  width: 25%;
+}
+.panel {
+  background-color: #333;
+}
+.panel-group {
+  margin-top: 10px;
+}
+.panel-group .panel {
+  margin: 15px 0;
+}
+.panel-heading {
+  background-color: #e28564;
+}
+.panel-heading p {
+  color: #fff;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+.panel-body {
+  background-color: #333;
+}
+.panel-body .list-group-item {
+  background-color: #333;
+}
+.panel-body table {
+  font-size: 1.5em;
+}
+.container{
+  background-color: #222;
+  color: #fff;
+  height: 100%;
+  max-width: 980px;
+}
+.navbar-toggle {
+   margin: 5px 0;
+}
+.nav-justified > li {
+  width: 20%;
+}
+.sec_title {
+  margin: 4px auto;
+  text-align: center;
+}
+p {
+  color: #aaa;
+  font-size: 1.5em;
+  padding: 10px;
+}
+a {
+  color: #aaa;
+}
+.active {
+  background-color: #333;
+}
+.list-group-item {
+  background-color: #222;
+  border: none;
+  color: #aaa;
+  font-size: 1.5em;
+}
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+.nav-justified {
+  /*
+  max-height: 50px;
+  background-color: #eee;
+  */
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #aaa;
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid rgba(0,0,0,.1);
+  border-right: 1px solid rgba(0,0,0,.1);
+  background-color: #9d9d9d; /* Old browsers */
+  background-repeat: repeat-x; /* Repeat the gradient */
+  background-image: -moz-linear-gradient(top, #444 0%, #222 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444), color-stop(100%,#222)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #444 0%,#222 100%); /* Chrome 10+,Safari 5.1+ */
+  background-image: -ms-linear-gradient(top, #444 0%,#222 100%); /* IE10+ */
+  background-image: -o-linear-gradient(top, #444 0%,#222 100%); /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444', endColorstr='#222',GradientType=0 ); /* IE6-9 */
+  background-image: linear-gradient(top, #444 0%,#222 100%); /* W3C */
+}
+.nav-justified > .active > a {
+  background-color: #333;
+  background-image: none;
+  box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+}
+.nav-justified > li:first-child > a {
+  border-left: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.nav-justified > li:last-child > a {
+  border-right: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: #444;
+}
+.text-bold {
+  font-weight: bold;
+}
+.table {
+  color: #aaa;
+}
+.table > tbody > tr > td {
+  border-top: 0;
+}
+.table > tbody > tr > th {
+  border-top: 0;
+  font-weight: bold;
+}
+.map_container {
+  height: 90%;
+  margin: 0 auto;
+  width: 100%;
+}
+.gmap {
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+.col-md-6{
+  height: 100%;
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.client_cols {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -ms-column-count: 2;
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+.foot_lg {
+  display: block;
+}
+.foot_sm {
+  display: none;
+}
+.ilink a {
+  color: #e28564;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .client_cols {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -ms-column-count: 1;
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }
+  .foot_lg {
+    display: none;
+  }
+  .foot_sm {
+    display: block;
+  }
+  footer p{
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding: 0;
+    }
+    .navbar-brand img {
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 9px 10px;
+    }
+    .nav-justified > li {
+      width: 100%;
+    }
+    .table-responsive {
+      border: none;
+    }
+}
