@@ -150,6 +150,7 @@ a {
 }
 .table {
   color: #aaa;
+  width: auto;
 }
 .table > tbody > tr > td {
   border-top: 0;
@@ -190,8 +191,28 @@ a {
   color: #e28564;
   font-weight: bold;
 }
+.empbox{
+  width: 100%;
+}
+.panel-body p{
+  margin-left: 10px;
+}
+.propic{
+  margin-right: 10px;
+  width: 25%;
+}
+.apropic{
+  margin-right: 10px;
+  width: 30%;
+}
+.tb{
+  display: block;
+}
+.mob{
+  display: none;
+}
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .client_cols {
     -webkit-column-count: 1; /* Chrome, Safari, Opera */
     -ms-column-count: 1;
@@ -207,6 +228,19 @@ a {
   footer p{
     margin: 0;
     padding: 5px;
+  }
+  .table{
+    width: 100%;
+  }
+  .tb{
+    display: none;
+  }
+  .mob{
+    display: block;
+  }
+  .propic, .apropic{
+    margin-bottom: 10px;
+    width: 100%;
   }
 }
 
@@ -224,5 +258,5 @@ a {
     }
     .table-responsive {
       border: none;
-    }
+      }
 }
